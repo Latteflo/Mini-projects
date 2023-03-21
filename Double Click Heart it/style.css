@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    background: rgb(49, 44, 44);
+}
+
+h3{
+    margin-bottom: 0;
+    text-align: center;
+    color: #f0e517;
+}
+
+small{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.fa-heart{
+    color: #f00;
+}
+
+.loveMe{
+    height: 550px;
+    width: 550px;
+    background-image:url('./bumblebee.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.loveMe .fa-heart{
+    position: absolute;
+    animation: grow 1.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow{
+    to{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(250, 215, 234);
+}
+
+.empty{
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+    background-image: url(./box.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.fill{
+    background-image: url(./cat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 44px;
+    margin-top: 80px;
+    transform: rotateZ(18deg); 
+    
+}
+
+.hold{
+    color: brown;
+}
+
+.hovered{
+   opacity: 0.5;
+}
+
